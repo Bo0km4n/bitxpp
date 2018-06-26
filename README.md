@@ -25,6 +25,23 @@ $ bitxpp -i a00f -m h
 (bit)    : 1010000000001111
 ```
 
+### help
+
+```
+$ bitxpp -h
+  -c	console mode
+    	commands:
+    		'/cd => change decimal mode'
+    		'/ch => change hex mode'
+    		'/cb => change bit mode'
+  -i string
+    	input text
+  -m string
+    	input mode
+    	'd: deciaml'
+    	'h: hex'
+    	'b: bit' (default "d")
+```
 
 ## Mode
 
