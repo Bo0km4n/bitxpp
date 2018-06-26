@@ -14,7 +14,7 @@ const (
 
 	SwitchDecimal = `/cd`
 	SwitchBit     = "/cb"
-	SwitchHex     = "/ch"
+	SwitchHex     = "/cx"
 )
 
 // Printer //
@@ -25,7 +25,7 @@ type Printer struct {
 var ModeMap = map[string]string{
 	"d": DECIMAL_MODE,
 	"b": BIT_MODE,
-	"h": HEX_MODE,
+	"x": HEX_MODE,
 }
 
 func NewPrinter(mode string) *Printer {

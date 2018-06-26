@@ -19,7 +19,7 @@ bitxpp -i a00f -m x
 output is
 
 ```
-$ bitxpp -i a00f -m h
+$ bitxpp -i a00f -m x
 (decimal):            40975
 (hex)    :             a00f
 (bit)    : 1010000000001111
@@ -32,14 +32,14 @@ $ bitxpp -h
   -c	console mode
     	commands:
     		'/cd => change decimal mode'
-    		'/ch => change hex mode'
+    		'/cx => change hex mode'
     		'/cb => change bit mode'
   -i string
     	input text
   -m string
     	input mode
     	'd: deciaml'
-    	'h: hex'
+    	'x: hex'
     	'b: bit' (default "d")
 ```
 
@@ -72,7 +72,7 @@ $ bitxpp -c
 (bit) >>
 ```
 
-type command `/cb`, `/ch`, `/cd` changes mode.
+type command `/cb`, `/cx`, `/cd` changes mode.
 
 ## Option
 

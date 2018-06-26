@@ -23,8 +23,6 @@ func Start(in io.Reader, out io.Reader) {
 		}
 
 		line := scanner.Text()
-		// TODO:
-		// implement
 		printer.Exec(line)
 	}
 }
