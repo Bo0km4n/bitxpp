@@ -28,7 +28,8 @@ func main() {
 
 	switch *consoleOpt {
 	case true:
-		fmt.Println("console mode")
+		// TODO: implement console mode
+		fmt.Println("sorry, console mode has not implemented yet.")
 	case false:
 		oneShotPrint(*inputMode, *input)
 	}
