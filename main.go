@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"strconv"
 
 	"github.com/fatih/color"
@@ -31,7 +32,9 @@ func main() {
 		// TODO: implement console mode
 		fmt.Println("sorry, console mode has not implemented yet.")
 	case false:
-		oneShotPrint(*inputMode, *input)
+		if err := oneShotPrint(*inputMode, *input); err != nil {
+			log.Fatal("Input format is incollect")
+		}
 	}
 }
 
