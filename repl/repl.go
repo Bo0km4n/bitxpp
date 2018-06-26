@@ -4,15 +4,19 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+
+	"github.com/Bo0km4n/bitxpp/printer"
 )
 
 const PROMPT = ">> "
 
 func Start(in io.Reader, out io.Reader) {
 	scanner := bufio.NewScanner(in)
-
+	printer := printer.Printer{
+		Mode: printer.DECIMAL_MODE,
+	}
 	for {
-		fmt.Printf(PROMPT)
+		fmt.Printf("(%s) %s", printer.Mode, PROMPT)
 		scanned := scanner.Scan()
 		if !scanned {
 			return
@@ -21,6 +25,6 @@ func Start(in io.Reader, out io.Reader) {
 		line := scanner.Text()
 		// TODO:
 		// implement
-		fmt.Println(line)
+		printer.Exec(line)
 	}
 }
