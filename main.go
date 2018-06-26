@@ -4,8 +4,10 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"os"
 	"strconv"
 
+	"github.com/Bo0km4n/bitxpp/repl"
 	"github.com/fatih/color"
 )
 
@@ -31,6 +33,7 @@ func main() {
 	case true:
 		// TODO: implement console mode
 		fmt.Println("sorry, console mode has not implemented yet.")
+		repl.Start(os.Stdin, os.Stdout)
 	case false:
 		if err := oneShotPrint(*inputMode, *input); err != nil {
 			log.Fatal("Input format is incollect")
