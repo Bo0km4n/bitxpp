@@ -22,6 +22,18 @@ type Printer struct {
 	Mode string
 }
 
+var ModeMap = map[string]string{
+	"d": DECIMAL_MODE,
+	"b": BIT_MODE,
+	"h": HEX_MODE,
+}
+
+func NewPrinter(mode string) *Printer {
+	return &Printer{
+		Mode: mode,
+	}
+}
+
 // OneShotPrint print some format from input string
 func (p *Printer) OneShotPrint(input string) error {
 	var v uint64
