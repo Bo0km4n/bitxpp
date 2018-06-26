@@ -45,11 +45,34 @@ $ bitxpp -h
 
 ## Mode
 
-bitxpp has 3 input modes.
+bitxpp has main 3 input modes.
 
 1. `-m d` input decimal
 2. `-m x` input hex
 3. `-m b` input bit
+
+### console mode
+```
+$ bitxpp -c
+(decimal) >> 100
+(decimal):     100
+(hex)    :      64
+(bit)    : 1100100
+(decimal) >> /cd
+(decimal) >> /ch
+(hex) >> ffff
+(decimal):            65535
+(hex)    :             ffff
+(bit)    : 1111111111111111
+(hex) >> /cb
+(bit) >> 01001010
+(decimal):      74
+(hex)    :      4a
+(bit)    : 1001010
+(bit) >>
+```
+
+type command `/cb`, `/ch`, `/cd` changes mode.
 
 ## Option
 
