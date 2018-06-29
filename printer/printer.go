@@ -12,9 +12,9 @@ const (
 	BIT_MODE     = "bit"
 	DECIMAL_MODE = "decimal"
 
-	SwitchDecimal = `/cd`
-	SwitchBit     = "/cb"
-	SwitchHex     = "/cx"
+	SwitchDecimal = `/d`
+	SwitchBit     = "/b"
+	SwitchHex     = "/x"
 )
 
 // Printer //
