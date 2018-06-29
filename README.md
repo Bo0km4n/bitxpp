@@ -31,9 +31,9 @@ $ bitxpp -i a00f -m x
 $ bitxpp -h
   -c	console mode
     	commands:
-    		'/cd => change decimal mode'
-    		'/cx => change hex mode'
-    		'/cb => change bit mode'
+    		'/d => change decimal mode'
+    		'/x => change hex mode'
+    		'/b => change bit mode'
   -i string
     	input text
   -m string
@@ -58,8 +58,8 @@ $ bitxpp -c
 (decimal):     100
 (hex)    :      64
 (bit)    : 1100100
-(decimal) >> /cd
-(decimal) >> /ch
+(decimal) >> /d
+(decimal) >> /x
 (hex) >> ffff
 (decimal):            65535
 (hex)    :             ffff
@@ -72,7 +72,7 @@ $ bitxpp -c
 (bit) >>
 ```
 
-type command `/cb`, `/cx`, `/cd` changes mode.
+type command `/b`, `/x`, `/d` changes mode.
 
 ## Option
 

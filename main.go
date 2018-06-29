@@ -15,7 +15,7 @@ var (
 	bitMode     = "b"
 	inputMode   = flag.String("m", "d", "input mode \n'd: deciaml' \n'h: hex' \n'b: bit'")
 	input       = flag.String("i", "0", "input text")
-	consoleOpt  = flag.Bool("c", false, "console mode \ncommands: \n\t'/cd => change decimal mode' \n\t'/ch => change hex mode' \n\t'/cb => change bit mode'")
+	consoleOpt  = flag.Bool("c", false, "console mode \ncommands: \n\t'/d => change decimal mode' \n\t'/x => change hex mode' \n\t'/b => change bit mode'")
 )
 
 func main() {
